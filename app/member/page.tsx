@@ -13,10 +13,10 @@ import {
 export default function MemberPage() {
   return (
     <>
-    <div>
-      <h1 className={title()}>團隊成員</h1>
-    </div>
-    <Card className="max-w-[400px]">
+      <div>
+        <h1 className={title()}>團隊成員</h1>
+      </div>
+      <Card className="max-w-[400px]">
         <CardHeader className="flex gap-3">
           <Image
             alt="heroui logo"
@@ -26,7 +26,7 @@ export default function MemberPage() {
             width={40}
           />
           <div className="flex flex-col">
-            <p className="text-md">塗○傑</p>
+            <p className="text-md">塗○傑(或其配偶)</p>
             <p className="text-small text-default-500">董事</p>
           </div>
         </CardHeader>
@@ -34,12 +34,12 @@ export default function MemberPage() {
         <CardBody>
           <p>不是董事長</p>
           <p>不是總經理</p>
-          <p>國中同班同學</p>
+          <p>國中同班同學(或其配偶)</p>
         </CardBody>
         <Divider />
         <CardFooter>
           <Link isExternal showAnchorIcon href="https://www.tapmc.com.tw/">
-          臺北農產運銷股份有限公司
+            臺北農產運銷股份有限公司
           </Link>
         </CardFooter>
       </Card>
@@ -64,7 +64,7 @@ export default function MemberPage() {
         <Divider />
         <CardFooter>
           <Link isExternal showAnchorIcon href="https://www.dep.gov.taipei/">
-          臺北市政府環境保護局
+            臺北市政府環境保護局
           </Link>
         </CardFooter>
       </Card>
@@ -89,7 +89,7 @@ export default function MemberPage() {
         <Divider />
         <CardFooter>
           <Link isExternal showAnchorIcon href="https://dof.gov.taipei/">
-          臺北市政府財政局
+            臺北市政府財政局
           </Link>
         </CardFooter>
       </Card>
@@ -114,7 +114,7 @@ export default function MemberPage() {
         <Divider />
         <CardFooter>
           <Link isExternal showAnchorIcon href="https://www.doe.gov.taipei/">
-          臺北市政府教育局
+            臺北市政府教育局
           </Link>
         </CardFooter>
       </Card>
@@ -140,7 +140,7 @@ export default function MemberPage() {
         <Divider />
         <CardFooter>
           <Link isExternal showAnchorIcon href="https://www.gov.taipei/">
-          臺北市政府全球資訊網
+            臺北市政府全球資訊網
           </Link>
         </CardFooter>
       </Card>
