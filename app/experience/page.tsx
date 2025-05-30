@@ -33,7 +33,6 @@ export default function ExperiencePage() {
         <Divider />
         <CardBody>
           <p>管理師</p>
-          <p>委任第五職等</p>
         </CardBody>
         <Divider />
         <CardFooter>
@@ -52,17 +51,21 @@ export default function ExperiencePage() {
             width={40}
           />
           <div className="flex flex-col">
-            <p className="text-md">臺北市長候選人</p>
-            <p className="text-small text-default-500">2034</p>
+            <p className="text-md">熱門人選</p>
+            <p className="text-small text-default-500">2034~2038</p>
           </div>
         </CardHeader>
         <Divider />
         <CardBody>
-        <p>以鋒兄出現在民調上為準</p>
+          <p>以鋒兄出現在民調上為準</p>
         </CardBody>
         <Divider />
         <CardFooter>
-          <Link isExternal showAnchorIcon href="https://www.tvbs.com.tw/poll-center">
+          <Link
+            isExternal
+            showAnchorIcon
+            href="https://www.tvbs.com.tw/poll-center"
+          >
             民調中心 | TVBS
           </Link>
         </CardFooter>
@@ -77,14 +80,14 @@ export default function ExperiencePage() {
             width={40}
           />
           <div className="flex flex-col">
-            <p className="text-md">臺北市長候選人</p>
+            <p className="text-md">臺北市長(候選人)</p>
             <p className="text-small text-default-500">2038</p>
           </div>
         </CardHeader>
         <Divider />
         <CardBody>
           <p>時下國高中生模仿鋒兄</p>
-        <p>黨主席候選人</p>
+          <p>黨主席(候選人)</p>
           <p>輔選臺北市議員有功</p>
           <p>輔選全台縣市長有功</p>
         </CardBody>
