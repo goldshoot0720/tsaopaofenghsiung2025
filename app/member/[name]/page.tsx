@@ -138,7 +138,7 @@ export default function MemberPage({ params }: MemberPageProps) {
               width={40}
             />
             <div className="flex flex-col">
-              <p className="text-md">賴○蓉</p>
+              <p className="text-md">xxx</p>
               <p className="text-small text-default-500">局長</p>
             </div>
           </CardHeader>
