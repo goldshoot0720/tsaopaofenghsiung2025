@@ -36,7 +36,7 @@ export default function MemberPage({ params }: MemberPageProps) {
   }
 
   const name = decodeURIComponent(resolvedParams.name);
-  const memberData = ["草包鋒兄", "塗○傑", "劉○萱", "賴○蓉"];
+  const memberData = ["草包鋒兄", "塗○傑", "○○○", "xxx"];
 
   return (
     <>
@@ -100,7 +100,7 @@ export default function MemberPage({ params }: MemberPageProps) {
           </CardFooter>
         </Card>
       )}
-      {name === "劉○萱" && (
+      {name === "○○○" && (
         <Card className="max-w-[400px]">
           <CardHeader className="flex gap-3">
             <Image
@@ -127,7 +127,7 @@ export default function MemberPage({ params }: MemberPageProps) {
           </CardFooter>
         </Card>
       )}
-      {name === "賴○蓉" && (
+      {name === "xxx" && (
         <Card className="max-w-[400px]">
           <CardHeader className="flex gap-3">
             <Image
