@@ -78,7 +78,7 @@ export default function MemberPage() {
             width={40}
           />
           <div className="flex flex-col">
-            <p className="text-md">○○○</p>
+            <p className="text-md">xxx</p>
             <p className="text-small text-default-500">局長</p>
           </div>
         </CardHeader>
