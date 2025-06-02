@@ -10,8 +10,15 @@ export default function Home() {
           src="/MyTshirtmy.png"
           width={100}
           height={100}
-          alt="草包鋒兄T恤"
-          title="草包鋒兄T恤"
+          alt="草包鋒兄T恤正面"
+          title="草包鋒兄T恤正面"
+        />
+        <Image
+          src="/BackTshirtBack.png"
+          width={100}
+          height={100}
+          alt="草包鋒兄T恤背面"
+          title="草包鋒兄T恤背面"
         />
         <Image
           src="/IMG_0032.jpg"
