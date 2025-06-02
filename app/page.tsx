@@ -7,16 +7,25 @@ export default function Home() {
       <div>
         <h1 className={title()}>首頁</h1>
         <Image
+          src="/MyTshirtmy.png"
+          width={100}
+          height={100}
+          alt="草包鋒兄T恤"
+          title="草包鋒兄T恤"
+        />
+        <Image
           src="/IMG_0032.jpg"
-          width={150}
-          height={150}
+          width={100}
+          height={100}
           alt="Picture of cat."
+          title="Picture of cat."
         />
         <Image
           src="/qr250431003912code.png"
           width={100}
           height={100}
           alt="Picture of QrCode."
+          title="Picture of QrCode."
         />
       </div>
     </>
