@@ -6,7 +6,7 @@ export default function AboutPage() {
       <div>
         <h1 className={title()}>關於</h1>
       </div>
-      <h1>Thank to Vercel/Netlify</h1>
+      <h1>Thank to Vercel/Netlify/Render</h1>
       <h1>Thank to Next.js</h1>
       <h1>Thank to HeroUI</h1>
       <h1>Thank to React</h1>
