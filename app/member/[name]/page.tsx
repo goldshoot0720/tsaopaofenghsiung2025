@@ -36,7 +36,14 @@ export default function MemberPage({ params }: MemberPageProps) {
   }
 
   const name = decodeURIComponent(resolvedParams.name);
-  const memberData = ["草包鋒兄", "塗○傑", "○○○", "xxx"];
+  const memberData = [
+    "草包鋒兄",
+    "塗○傑(或其配偶)",
+    "○○○",
+    "xxx",
+    "未知",
+    "時任",
+  ];
 
   return (
     <>
@@ -71,7 +78,7 @@ export default function MemberPage({ params }: MemberPageProps) {
           </CardFooter>
         </Card>
       )}
-      {name === "塗○傑" && (
+      {name === "塗○傑(或其配偶)" && (
         <Card className="max-w-[400px]">
           <CardHeader className="flex gap-3">
             <Image
@@ -82,7 +89,7 @@ export default function MemberPage({ params }: MemberPageProps) {
               width={40}
             />
             <div className="flex flex-col">
-              <p className="text-md">塗○傑</p>
+              <p className="text-md">塗○傑(或其配偶)</p>
               <p className="text-small text-default-500">董事</p>
             </div>
           </CardHeader>
@@ -150,6 +157,61 @@ export default function MemberPage({ params }: MemberPageProps) {
           <CardFooter>
             <Link isExternal showAnchorIcon href="https://dof.gov.taipei/">
               臺北市政府財政局
+            </Link>
+          </CardFooter>
+        </Card>
+      )}
+      {name === "未知" && (
+        <Card className="max-w-[400px]">
+          <CardHeader className="flex gap-3">
+            <Image
+              alt="heroui logo"
+              height={40}
+              radius="sm"
+              src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
+              width={40}
+            />
+            <div className="flex flex-col">
+              <p className="text-md">未知</p>
+              <p className="text-small text-default-500">局長</p>
+            </div>
+          </CardHeader>
+          <Divider />
+          <CardBody>
+            <p>小毛老師推薦</p>
+          </CardBody>
+          <Divider />
+          <CardFooter>
+            <Link isExternal showAnchorIcon href="https://www.doe.gov.taipei/">
+              臺北市政府教育局
+            </Link>
+          </CardFooter>
+        </Card>
+      )}
+      {name === "時任" && (
+        <Card className="max-w-[400px]">
+          <CardHeader className="flex gap-3">
+            <Image
+              alt="heroui logo"
+              height={40}
+              radius="sm"
+              src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
+              width={40}
+            />
+            <div className="flex flex-col">
+              <p className="text-md">時任</p>
+              <p className="text-small text-default-500">局處首長</p>
+            </div>
+          </CardHeader>
+          <Divider />
+          <CardBody>
+            <p>副局長代理</p>
+            <p>副處長代理</p>
+          </CardBody>
+          <Divider />
+          <CardFooter>
+            <Link isExternal showAnchorIcon href="https://www.gov.taipei/">
+              臺北市政府全球資訊網
             </Link>
           </CardFooter>
         </Card>

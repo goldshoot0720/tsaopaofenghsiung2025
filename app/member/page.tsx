@@ -144,6 +144,12 @@ export default function MemberPage() {
           </Link>
         </CardFooter>
       </Card>
+      <h2>
+        <Link href="/api/member">api for member</Link>
+      </h2>
+      <h3>
+        <Link href="/api/member/塗○傑(或其配偶)">api for 塗○傑(或其配偶)</Link>
+      </h3>
     </>
   );
 }
