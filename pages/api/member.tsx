@@ -1,4 +1,7 @@
-export default function handler(req, res) {
+// 引入 Next.js 的 API Request/Response 型別
+import type { NextApiRequest, NextApiResponse } from "next";
+
+export default function handler(req: NextApiRequest, res: NextApiResponse) {
   const member = [
     {
       name: "塗○傑(或其配偶)",
@@ -36,5 +39,6 @@ export default function handler(req, res) {
       unitsite: "https://www.gov.taipei/",
     },
   ];
+
   res.status(200).json({ member });
 }
