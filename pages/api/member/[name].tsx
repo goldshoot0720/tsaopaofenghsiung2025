@@ -43,6 +43,15 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
       unit: "臺北市政府教育局",
       unitsite: "https://www.gov.taipei/",
     });
+  } else if (name === "草包鋒兄") {
+    res.status(200).json({
+      name: name,
+      relation: "桃園縣立東興國中第十七屆畢業生",
+      title: "大家長",
+      unit: "市政大樓11F中央區",
+      unitsite:
+        "https://www-ws.gov.taipei/001/Upload/297/relfile/7725/97235/5624f50e-9193-4c61-88f3-6a8686ee8adb.pdf",
+    });
   } else {
     res.status(200).json({
       name: name,
