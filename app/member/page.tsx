@@ -148,7 +148,7 @@ export default function MemberPage() {
         <Link href="/api/member">api for member</Link>
       </h2>
       <h2>
-        <Link href="/api/member">api for 塗○傑(或其配偶)</Link>
+        <Link href="/api/member/塗○傑(或其配偶)">api for 塗○傑(或其配偶)</Link>
       </h2>
       <h3>
         <Link href="/api/member/草包鋒兄">api for 草包鋒兄</Link>
