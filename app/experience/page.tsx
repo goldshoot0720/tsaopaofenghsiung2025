@@ -33,6 +33,9 @@ export default function ExperiencePage() {
         <Divider />
         <CardBody>
           <p>管理師</p>
+          <p>2025年高考三級因颱風之故順延一天?</p>
+          <p>2025年高普考因地震之故延後榜示?農曆(相當於11/06)</p>
+          <p>報到日37歲生日當天?</p>
         </CardBody>
         <Divider />
         <CardFooter>
