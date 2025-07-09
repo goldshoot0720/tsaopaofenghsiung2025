@@ -1,0 +1,11 @@
+name = "tsaopaofenghsiung2025"
+account_id = "f866a4aeccaeefe2bba8057c8c8a2cda"
+compatibility_date = "2025-06-29"
+compatibility_flags = ["nodejs_compat"]
+
+[site]
+bucket = "./dist"
+entry-point = "."
+
+[build]
+command = "npm run build"
