@@ -2,8 +2,9 @@
 import Image from "next/image";
 import { title } from "@/components/primitives";
 import { useEffect } from "react";
-import Plyr from "plyr";
+import dynamic from "next/dynamic";
 import "plyr/dist/plyr.css";
+const Plyr = dynamic(() => import("plyr"), { ssr: false });
 export default function Saint202507050418Page() {
   useEffect(() => {
     const player = new Plyr("#player");
