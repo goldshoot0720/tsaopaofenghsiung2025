@@ -6,6 +6,27 @@ export default function Home() {
     <>
       <div>
         <h1 className={title()}>首頁</h1>
+        <p>
+          {" "}
+          <a
+            href="https://tsaopaofenghsiung.wordpress.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            (wordpress) 草包鋒兄 二零二五年至二零三八年 全紀錄
+          </a>
+        </p>
+        <p>
+          {" "}
+          <a
+            href="https://tsaopaofenghsiung3.github.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            (hexo) 草包鋒兄
+            從2025年高考三級資訊處理榜首到2038年第12屆台北市長(候選人)
+          </a>
+        </p>
         <div className="grid grid-cols-2 gap-4">
           {[
             {
