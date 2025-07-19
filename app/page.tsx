@@ -27,6 +27,16 @@ export default function Home() {
             從2025年高考三級資訊處理榜首到2038年第12屆台北市長(候選人)
           </a>
         </p>
+                <p>
+          {" "}
+          <a
+            href="https://tsaopaofenghsiung.digitalpress.blog/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            (ghost) 草包鋒兄
+          </a>
+        </p>
         <div className="grid grid-cols-2 gap-4">
           {[
             {
