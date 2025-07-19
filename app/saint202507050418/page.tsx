@@ -48,13 +48,18 @@ export default function Saint202507050418Page() {
         title="30分鐘完整版／自稱繼承人！唐新民扯「馬英九毒殺蔣經國」哽咽：死得好冤｜三立新聞網 SETN.com"
         width={333}
       />
+      <h2>2分25秒版本</h2>
       <video id="player" width="333" height="333" controls>
         <source
-          src="https://wrn5xhmwg3rulhoy.public.blob.vercel-storage.com/30%E5%88%86%E9%90%98%E5%AE%8C%E6%95%B4%E7%89%88%EF%BC%8F%E8%87%AA%E7%A8%B1%E7%B9%BC%E6%89%BF%E4%BA%BA%EF%BC%81%E5%94%90%E6%96%B0%E6%B0%91%E6%89%AF%E3%80%8C%E9%A6%AC%E8%8B%B1%E4%B9%9D%E6%AF%92%E6%AE%BA%E8%94%A3%E7%B6%93%E5%9C%8B%E3%80%8D%E5%93%BD%E5%92%BD%EF%BC%9A%E6%AD%BB%E5%BE%97%E5%A5%BD%E5%86%A4%EF%BD%9C%E4%B8%89%E7%AB%8B%E6%96%B0%E8%81%9E%E7%B6%B2%20SETN_com-40c0087e65e7362b-pKT6bzP3T3ToF87AX0YIBtjUwx3Ap8.mp4"
+          src="https://wrn5xhmwg3rulhoy.public.blob.vercel-storage.com/video/di-8jie-tai-bei-shi-chang-xuan-ju-hui-gu.mp4"
           type="video/mp4"
         />
         <source
-          src="https://storage.googleapis.com/tsaopaofenghsiung2025/30%E5%88%86%E9%90%98%E5%AE%8C%E6%95%B4%E7%89%88%EF%BC%8F%E8%87%AA%E7%A8%B1%E7%B9%BC%E6%89%BF%E4%BA%BA%EF%BC%81%E5%94%90%E6%96%B0%E6%B0%91%E6%89%AF%E3%80%8C%E9%A6%AC%E8%8B%B1%E4%B9%9D%E6%AF%92%E6%AE%BA%E8%94%A3%E7%B6%93%E5%9C%8B%E3%80%8D%E5%93%BD%E5%92%BD%EF%BC%9A%E6%AD%BB%E5%BE%97%E5%A5%BD%E5%86%A4%EF%BD%9C%E4%B8%89%E7%AB%8B%E6%96%B0%E8%81%9E%E7%B6%B2%20SETN_com-40c0087e65e7362b.mp4"
+          src="https://storage.googleapis.com/goldshoot0720/video/di-8jie-tai-bei-shi-chang-xuan-ju-hui-gu.mp4"
+          type="video/mp4"
+        />
+        <source
+          src="https://pub-c89792336046495e89758a0a802e15c8.r2.dev/di-8jie-tai-bei-shi-chang-xuan-ju-hui-gu.mp4"
           type="video/mp4"
         />
         <track
@@ -65,6 +70,17 @@ export default function Saint202507050418Page() {
           default
         />
       </video>
+      <h2>完整版本</h2>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/eLF6tvVGFiA?si=bfanuCO8UwgP9RIL"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
       <h3>鋒兄不是第12屆臺北市長的話</h3>
       <h3>鋒兄2038年至2042年人會在中壢</h3>
       <h3>希望鋒兄支持者和鋒兄一起離開臺北四年喔</h3>
