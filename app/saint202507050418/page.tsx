@@ -49,7 +49,7 @@ export default function Saint202507050418Page() {
         width={333}
       />
       <h2>2分25秒版本</h2>
-      <video id="player" width="333" height="333" controls>
+      <video id="player" width="100%" controls>
         <source
           src="https://wrn5xhmwg3rulhoy.public.blob.vercel-storage.com/video/di-8jie-tai-bei-shi-chang-xuan-ju-hui-gu.mp4"
           type="video/mp4"
