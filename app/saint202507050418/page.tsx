@@ -72,15 +72,15 @@ export default function Saint202507050418Page() {
       </video>
       <h2>完整版本</h2>
       <iframe
-        width="560"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+        frameBorder="0"
         height="315"
+        referrerPolicy="strict-origin-when-cross-origin"
         src="https://www.youtube.com/embed/eLF6tvVGFiA?si=bfanuCO8UwgP9RIL"
         title="YouTube video player"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
+        width="560"
+      />
       <h3>鋒兄不是第12屆臺北市長的話</h3>
       <h3>鋒兄2038年至2042年人會在中壢</h3>
       <h3>希望鋒兄支持者和鋒兄一起離開臺北四年喔</h3>
