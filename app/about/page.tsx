@@ -16,9 +16,7 @@ export default function AboutPage() {
       <br />
       <h1>Thank to:</h1>
       <h2>Vercel/Netlify/Render</h2>
-      <h2>Next.js</h2>
-      <h2>HeroUI</h2>
-      <h2>React</h2>
+      <h2>Next.js/HeroUI/React</h2>
       <h2>ChatGPT</h2>
       <h2>Google(Text-to-Speech AI)</h2>
       <h2>Font Awesome</h2>

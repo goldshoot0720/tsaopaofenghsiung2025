@@ -6,37 +6,32 @@ export default function Home() {
     <>
       <div>
         <h1 className={title()}>首頁</h1>
-        <p>
-          {" "}
-          <a
-            href="https://tsaopaofenghsiung.wordpress.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            (wordpress) 草包鋒兄 二零二五年至二零三八年 全紀錄
-          </a>
-        </p>
-        <p>
-          {" "}
-          <a
-            href="https://tsaopaofenghsiung37.github.io/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            (hexo) 草包鋒兄
-            從2025年高考三級資訊處理榜首到2038年第12屆台北市長(候選人)
-          </a>
-        </p>
-                <p>
-          {" "}
-          <a
-            href="https://tsaopaofenghsiung.digitalpress.blog/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            (ghost) 草包鋒兄
-          </a>
-        </p>
+        <h2>草包鋒兄 二零二五年至二零三八年 全紀錄</h2>
+        <h2>從2025年高考三級資訊處理榜首到2038年第12屆台北市長(候選人)</h2>
+        <a
+          href="https://tsaopaofenghsiung.wordpress.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 font-semibold"
+        >
+          wordpress
+        </a>{" "}
+        <a
+          href="https://tsaopaofenghsiung37.github.io/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 font-semibold"
+        >
+          hexo
+        </a>{" "}
+        <a
+          href="https://tsaopaofenghsiung.digitalpress.blog/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 font-semibold"
+        >
+          ghost
+        </a>
         <div className="grid grid-cols-2 gap-4">
           {[
             {
