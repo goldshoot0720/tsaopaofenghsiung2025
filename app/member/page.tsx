@@ -156,6 +156,9 @@ export default function MemberPage() {
       <h3>
         <Link href="/member/草包鋒兄">member for 草包鋒兄</Link>
       </h3>
+      <h3>
+        <Link href="/member/市民">member for 市民</Link>
+      </h3>
     </>
   );
 }
