@@ -34,9 +34,9 @@ async function fetchPost(slug: string): Promise<Post | null> {
 export default async function ArticlePage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const { slug } = params;
+  const { slug } = await params;
 
   const post = await fetchPost(slug);
   if (!post) {
