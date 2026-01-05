@@ -8,8 +8,7 @@ import "plyr/dist/plyr.css";
 export default function Saint202507050418Page() {
   useEffect(() => {
     async function loadPlyr() {
-      const PlyrModule = await import("plyr");
-      const Plyr = PlyrModule.default;
+      const { default: Plyr } = await import("plyr");
       const player = new Plyr("#player");
     }
     loadPlyr();
