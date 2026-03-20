@@ -15,13 +15,13 @@ export default function MemberPage() {
     <section className="space-y-6">
       <div className="tech-panel rounded-[2rem] px-6 py-8 sm:px-8">
       <div className="space-y-3">
-          <p className="tech-heading text-sm text-cyan-200/90">Team Network</p>
+          <p className="tech-heading text-sm text-orange-700/90">Team Network</p>
           <h1 className={title({ color: "cyan" })}>團隊成員</h1>
           <div className="tech-divider" />
         </div>
       </div>
       <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-        <Card className="tech-panel max-w-[400px] rounded-[1.75rem] border border-white/10 bg-transparent text-white shadow-none">
+        <Card className="tech-panel max-w-[400px] rounded-[1.75rem] border border-orange-200/50 bg-transparent text-stone-800 shadow-none">
           <CardHeader className="flex gap-3">
             <Image
               alt="heroui logo"
@@ -48,7 +48,7 @@ export default function MemberPage() {
             </Link>
           </CardFooter>
         </Card>
-        <Card className="tech-panel max-w-[400px] rounded-[1.75rem] border border-white/10 bg-transparent text-white shadow-none">
+        <Card className="tech-panel max-w-[400px] rounded-[1.75rem] border border-orange-200/50 bg-transparent text-stone-800 shadow-none">
           <CardHeader className="flex gap-3">
             <Image
               alt="heroui logo"
@@ -73,7 +73,7 @@ export default function MemberPage() {
             </Link>
           </CardFooter>
         </Card>
-        <Card className="tech-panel max-w-[400px] rounded-[1.75rem] border border-white/10 bg-transparent text-white shadow-none">
+        <Card className="tech-panel max-w-[400px] rounded-[1.75rem] border border-orange-200/50 bg-transparent text-stone-800 shadow-none">
           <CardHeader className="flex gap-3">
             <Image
               alt="heroui logo"
@@ -98,7 +98,7 @@ export default function MemberPage() {
             </Link>
           </CardFooter>
         </Card>
-        <Card className="tech-panel max-w-[400px] rounded-[1.75rem] border border-white/10 bg-transparent text-white shadow-none">
+        <Card className="tech-panel max-w-[400px] rounded-[1.75rem] border border-orange-200/50 bg-transparent text-stone-800 shadow-none">
           <CardHeader className="flex gap-3">
             <Image
               alt="heroui logo"
@@ -123,7 +123,7 @@ export default function MemberPage() {
             </Link>
           </CardFooter>
         </Card>
-        <Card className="tech-panel max-w-[400px] rounded-[1.75rem] border border-white/10 bg-transparent text-white shadow-none">
+        <Card className="tech-panel max-w-[400px] rounded-[1.75rem] border border-orange-200/50 bg-transparent text-stone-800 shadow-none">
           <CardHeader className="flex gap-3">
             <Image
               alt="heroui logo"

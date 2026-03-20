@@ -28,11 +28,11 @@ export const Navbar = () => {
 
   return (
     <HeroUINavbar
-      className="border-b border-white/10 bg-transparent"
+      className="border-b border-orange-200/50 bg-transparent"
       classNames={{
-        base: "border-b border-white/10 bg-transparent backdrop-blur-none",
+        base: "border-b border-orange-200/50 bg-transparent backdrop-blur-none",
         wrapper:
-          "tech-panel mt-4 rounded-[1.75rem] border px-4 py-2 shadow-[0_18px_55px_rgba(0,0,0,0.28)]",
+          "tech-panel mt-4 rounded-[1.75rem] border px-4 py-2 shadow-[0_18px_55px_rgba(214,133,59,0.16)]",
         menu: "tech-panel mt-3 rounded-[1.5rem] border p-4",
       }}
       isMenuOpen={isMenuOpen}
@@ -61,7 +61,7 @@ export const Navbar = () => {
             />
           </audio>
 
-          <span className="tech-heading bg-gradient-to-r from-cyan-300 via-sky-100 to-lime-200 bg-clip-text text-lg font-bold text-transparent">
+          <span className="tech-heading bg-gradient-to-r from-orange-500 via-amber-500 to-yellow-500 bg-clip-text text-lg font-bold text-transparent">
             草包鋒兄
           </span>
 
@@ -91,7 +91,7 @@ export const Navbar = () => {
                 href={item!.href}
                 className={clsx(
                   linkStyles({ color: "foreground" }),
-                  "tech-chip rounded-full px-3 py-2 text-sm font-medium data-[active=true]:border-cyan-300/60 data-[active=true]:text-cyan-200 flex items-center gap-2"
+                  "tech-chip rounded-full px-3 py-2 text-sm font-medium data-[active=true]:border-orange-300/70 data-[active=true]:text-orange-700 flex items-center gap-2"
                 )}
                 color="foreground"
               >

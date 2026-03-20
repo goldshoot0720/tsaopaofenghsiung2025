@@ -23,13 +23,13 @@ export default function ArticleItem({ post }: ArticleItemProps) {
     <li className="tech-panel flex items-center justify-between gap-4 rounded-[1.5rem] px-5 py-4 transition-transform duration-300 hover:-translate-y-0.5">
       <Link
         href={`/article/${post.slug}`}
-        className="text-lg font-medium text-cyan-100 hover:text-lime-200"
+        className="text-lg font-medium text-orange-700 hover:text-amber-600"
       >
         {post.title}
       </Link>
       <time
         dateTime={post.published_at}
-        className="shrink-0 rounded-full border border-cyan-300/20 bg-cyan-300/10 px-3 py-1 text-sm text-cyan-100/80"
+        className="shrink-0 rounded-full border border-orange-300/35 bg-orange-50/80 px-3 py-1 text-sm text-orange-700/80"
         aria-label={`發佈日期：${formatDate(post.published_at)}`}
       >
         {formatDate(post.published_at)}

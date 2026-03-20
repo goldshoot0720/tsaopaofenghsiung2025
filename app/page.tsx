@@ -60,7 +60,7 @@ export default function Home() {
       <div className="tech-panel relative overflow-hidden rounded-[2rem] px-6 py-8 sm:px-8 lg:px-10 lg:py-12">
         <div className="absolute inset-y-0 right-0 hidden w-1/3 bg-[radial-gradient(circle_at_center,rgba(103,232,249,0.18),transparent_62%)] lg:block" />
         <div className="relative space-y-6">
-          <div className="inline-flex items-center rounded-full border border-cyan-300/20 bg-cyan-300/10 px-4 py-2 text-xs font-medium uppercase tracking-[0.28em] text-cyan-100">
+          <div className="inline-flex items-center rounded-full border border-orange-300/40 bg-white/70 px-4 py-2 text-xs font-medium uppercase tracking-[0.28em] text-orange-700">
             2026-2027 Impeccable Style Interface
           </div>
           <div className="space-y-4">
@@ -68,7 +68,7 @@ export default function Home() {
             <div className="tech-divider max-w-2xl" />
             <div className="space-y-2 text-base sm:text-lg">
               <h2 className="tech-muted">草包鋒兄 二零二五年至二零三八年 全紀錄</h2>
-              <h2 className="text-white/90">
+              <h2 className="text-stone-800">
                 從2025年高考三級資訊處理榜首到2038年第12屆台北市長(候選人)
               </h2>
             </div>
@@ -121,7 +121,7 @@ export default function Home() {
       <div className="tech-panel rounded-[2rem] px-5 py-6 sm:px-6 lg:px-8">
         <div className="mb-6 flex items-center justify-between gap-4">
           <div>
-            <p className="tech-heading text-sm text-cyan-200/90">Visual Archive</p>
+            <p className="tech-heading text-sm text-orange-700/90">Visual Archive</p>
             <p className="tech-muted text-sm">保留原有內容，升級展示質感與節奏。</p>
           </div>
         </div>
@@ -131,7 +131,7 @@ export default function Home() {
               key={i}
               className="group tech-panel relative overflow-hidden rounded-[1.5rem] p-3 transition-transform duration-300 hover:-translate-y-1"
             >
-              <div className="absolute inset-x-4 top-3 flex items-center justify-between text-[10px] uppercase tracking-[0.24em] text-cyan-100/70">
+              <div className="absolute inset-x-4 top-3 flex items-center justify-between text-[10px] uppercase tracking-[0.24em] text-orange-700/70">
                 <span>Node {String(i + 1).padStart(2, "0")}</span>
                 <span>Live</span>
               </div>
@@ -143,7 +143,7 @@ export default function Home() {
                 title={img.title}
                 className="mt-7 h-44 w-full rounded-[1rem] object-cover transition duration-500 group-hover:scale-[1.04]"
               />
-              <p className="mt-3 text-sm font-medium text-white/90">{img.title}</p>
+              <p className="mt-3 text-sm font-medium text-stone-800">{img.title}</p>
             </div>
           ))}
         </div>

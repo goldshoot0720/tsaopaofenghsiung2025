@@ -22,8 +22,8 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#06131f" },
-    { media: "(prefers-color-scheme: dark)", color: "#06131f" },
+    { media: "(prefers-color-scheme: light)", color: "#fff8f1" },
+    { media: "(prefers-color-scheme: dark)", color: "#fff8f1" },
   ],
 };
 
@@ -53,7 +53,7 @@ export default function RootLayout({
                 href="/"
               >
                 <span className="tech-muted">Powered by</span>
-                <p className="tech-heading bg-gradient-to-r from-cyan-300 via-sky-200 to-lime-200 bg-clip-text text-transparent">
+                <p className="tech-heading bg-gradient-to-r from-orange-500 via-amber-400 to-yellow-500 bg-clip-text text-transparent">
                   草包鋒兄 2025
                 </p>
               </Link>

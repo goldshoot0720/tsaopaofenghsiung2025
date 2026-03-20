@@ -105,7 +105,7 @@ export default function ArticleListPage() {
   return (
     <div className="tech-panel mx-auto mt-4 max-w-4xl rounded-[2rem] p-6 sm:p-8">
       <div className="mb-6 space-y-3">
-        <p className="tech-heading text-sm text-cyan-200/90">Content Stream</p>
+        <p className="tech-heading text-sm text-orange-700/90">Content Stream</p>
         <h1 className={title({ color: "cyan" })}>最新文章</h1>
         <div className="tech-divider" />
       </div>
@@ -119,9 +119,9 @@ export default function ArticleListPage() {
           <ArticleItem key={post.uuid} post={post} />
         ))}
       </ul>
-      {loading && <p className="py-4 text-center text-cyan-100/70">載入中...</p>}
+      {loading && <p className="py-4 text-center text-orange-700/70">載入中...</p>}
       {!hasMore && !loading && (
-        <p className="py-4 text-center text-cyan-100/70">沒有更多文章了</p>
+        <p className="py-4 text-center text-orange-700/70">沒有更多文章了</p>
       )}
     </div>
   );
