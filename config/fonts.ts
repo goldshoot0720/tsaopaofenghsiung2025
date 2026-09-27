@@ -1,8 +1,11 @@
-import { Fira_Code as FontMono, Inter as FontSans } from "next/font/google";
+import { JetBrains_Mono as FontMono, Noto_Serif_TC as FontDisplay } from "next/font/google";
 
-export const fontSans = FontSans({
+export const fontDisplay = FontDisplay({
+  weight: ["600", "900"],
   subsets: ["latin"],
-  variable: "--font-sans",
+  preload: false,
+  display: "swap",
+  variable: "--font-display",
 });
 
 export const fontMono = FontMono({

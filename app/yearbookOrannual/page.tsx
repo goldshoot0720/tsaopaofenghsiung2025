@@ -1,55 +1,51 @@
-"use client";
+import type { Metadata } from "next";
 
-import { useState } from "react";
+import { PageHeader } from "@/components/page-header";
+import { getContent } from "@/lib/content/store";
 
-export default function YearbookOrannualPage() {
-  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+export const revalidate = 60;
 
-  const toggleTooltip = (index: number) => {
-    setActiveIndex((prev) => (prev === index ? null : index));
-  };
+export const metadata: Metadata = { title: "畢業紀念冊" };
 
-  const tooltips = [
-    { text: "學生數: 33", tip: "33歲，2021年" },
-    { text: "班級人數: 5、12、18、23", tip: "" },
-    { text: "5 12", tip: "委任第五職等／簡任第十二職等" },
-    { text: "12 18", tip: "臺北市第12屆市長／臺北市議會第18屆議員選舉選舉公報" },
-    { text: "18 23", tip: "第18屆立法委員選舉選舉公報／第23任總統副總統選舉選舉公報" },
-    { text: "5 23", tip: "女，5班23號／國中補習班同學" },
-    { text: "座號和", tip: "男，1號／女，32號／國中同班同學" },
-  ];
+export default async function YearbookPage() {
+  const { content } = await getContent();
+  const { yearbook } = content;
 
   return (
-    <div className="min-h-screen px-4 py-8 font-sans bg-background text-foreground">
-      <h1 className="text-2xl md:text-3xl font-bold text-center mb-8">
-        畢業紀念冊
-      </h1>
+    <>
+      <PageHeader eyebrow="Class of 2004" index="04" title={yearbook.title}>
+        數字背後的暗號 — 點開每一行看提示。
+      </PageHeader>
 
-      <div className="space-y-4 max-w-xl mx-auto text-base md:text-lg">
-        {tooltips.map((item, idx) => (
-          <div key={`${item.text}-${idx}`} className="mb-2">
-            <span>{item.text}</span>
-            {item.tip && (
-              <button
-                onClick={() => toggleTooltip(idx)}
-                aria-label={`顯示提示：${item.tip}`}
-                className="ml-2 font-bold text-primary hover:underline focus:outline-none focus-visible:ring-2 ring-primary rounded"
-              >
-                ?!
-              </button>
-            )}
-            {activeIndex === idx && item.tip && (
-              <div className="mt-1 p-2 text-sm rounded bg-muted text-muted-foreground ring-1 ring-border w-fit max-w-xs transition duration-150 ease-in-out">
-                {item.tip}
-              </div>
-            )}
-          </div>
-        ))}
-
-        <div className="pt-6 text-sm text-muted-foreground text-center">
-          © 桃園縣立東興國中第十七屆畢業紀念冊 2004
-        </div>
+      <div className="mx-auto max-w-2xl">
+        <ol className="surface divide-y divide-[var(--line)] overflow-hidden">
+          {yearbook.entries.map((entry, i) => (
+            <li key={`${entry.text}-${i}`}>
+              {entry.tip ? (
+                <details className="group">
+                  <summary className="flex cursor-pointer list-none items-center gap-4 px-5 py-4 hover:bg-[var(--paper-sunk)] [&::-webkit-details-marker]:hidden">
+                    <span className="label w-6 text-accent">{String(i + 1).padStart(2, "0")}</span>
+                    <span className="flex-grow text-lg font-medium">{entry.text}</span>
+                    <span
+                      aria-hidden
+                      className="grid h-7 w-7 place-items-center rounded-full border rule text-sm text-faint transition-transform group-open:rotate-45"
+                    >
+                      +
+                    </span>
+                  </summary>
+                  <p className="px-5 pb-5 pl-[3.75rem] leading-relaxed text-soft">{entry.tip}</p>
+                </details>
+              ) : (
+                <div className="flex items-center gap-4 px-5 py-4">
+                  <span className="label w-6 text-accent">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="text-lg font-medium">{entry.text}</span>
+                </div>
+              )}
+            </li>
+          ))}
+        </ol>
+        <p className="mt-8 text-center text-sm text-faint">{yearbook.footer}</p>
       </div>
-    </div>
+    </>
   );
 }

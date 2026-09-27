@@ -1,18 +1,22 @@
 import "@/styles/globals.css";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 import { Metadata, Viewport } from "next";
-import { Link } from "@heroui/link";
+import NextLink from "next/link";
 import clsx from "clsx";
+import { config as faConfig } from "@fortawesome/fontawesome-svg-core";
 
 import { Providers } from "./providers";
 
 import { siteConfig } from "@/config/site";
-import { fontSans } from "@/config/fonts";
-import { Navbar } from "@/components/navbar";
+import { fontDisplay, fontMono } from "@/config/fonts";
+import { SiteHeader } from "@/components/site-header";
+
+faConfig.autoAddCss = false;
 
 export const metadata: Metadata = {
   title: {
     default: siteConfig.name,
-    template: `%s - ${siteConfig.name}`,
+    template: `%s — ${siteConfig.name}`,
   },
   description: siteConfig.description,
   icons: {
@@ -22,41 +26,38 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#fff8f1" },
-    { media: "(prefers-color-scheme: dark)", color: "#fff8f1" },
+    { media: "(prefers-color-scheme: light)", color: "#f5efe4" },
+    { media: "(prefers-color-scheme: dark)", color: "#15120f" },
   ],
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html suppressHydrationWarning lang="en">
-      <head />
-      <body
-        className={clsx(
-          "min-h-screen font-sans antialiased text-foreground",
-          fontSans.variable,
-        )}
-      >
+    <html suppressHydrationWarning lang="zh-Hant-TW">
+      <body className={clsx("min-h-screen antialiased", fontDisplay.variable, fontMono.variable)}>
         <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
-          <div className="tech-shell relative flex min-h-screen flex-col">
-            <Navbar />
-            <main className="container mx-auto flex-grow px-4 pb-12 pt-24 sm:px-6 lg:max-w-7xl">
+          <div className="flex min-h-screen flex-col">
+            <SiteHeader />
+            <main className="mx-auto w-full max-w-6xl flex-grow px-4 pb-20 pt-10 sm:px-6 sm:pt-14">
               {children}
             </main>
-            <footer className="w-full px-4 pb-6 sm:px-6">
-              <Link
-                className="tech-panel mx-auto flex max-w-7xl items-center justify-center gap-1 rounded-[1.75rem] px-6 py-4 text-current"
-                href="/"
-              >
-                <span className="tech-muted">Powered by</span>
-                <p className="tech-heading bg-gradient-to-r from-orange-500 via-amber-400 to-yellow-500 bg-clip-text text-transparent">
-                  草包鋒兄 2025
+            <footer className="border-t rule">
+              <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-8 text-sm text-soft sm:flex-row sm:items-center sm:justify-between sm:px-6">
+                <p>
+                  <span className="font-display font-black text-[var(--ink)]">草包鋒兄</span> 2025 — 2038 全紀錄
                 </p>
-              </Link>
+                <nav aria-label="頁尾連結" className="flex flex-wrap gap-x-5 gap-y-2">
+                  <NextLink className="hover:text-[var(--ink)]" href="/about">
+                    關於本站
+                  </NextLink>
+                  <NextLink className="hover:text-[var(--ink)]" href="/api/member">
+                    成員 API
+                  </NextLink>
+                  <NextLink className="hover:text-[var(--ink)]" href="/admin">
+                    內容管理
+                  </NextLink>
+                </nav>
+              </div>
             </footer>
           </div>
         </Providers>
