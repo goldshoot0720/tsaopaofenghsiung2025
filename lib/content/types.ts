@@ -55,15 +55,10 @@ export interface SiteContent {
   };
   review: {
     title: string;
-    cover: GalleryItem;
     shortCut: {
       label: string;
       sources: string[];
       captions: string;
-    };
-    fullVersion: {
-      label: string;
-      youtubeEmbed: string;
     };
     facts: Fact[];
   };

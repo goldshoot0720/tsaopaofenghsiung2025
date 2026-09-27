@@ -154,11 +154,6 @@ export const defaultContent: SiteContent = {
   },
   review: {
     title: "第8屆回顧",
-    cover: {
-      src: `${BLOB}/30%E5%88%86%E9%90%98%E5%AE%8C%E6%95%B4%E7%89%88%EF%BC%8F%E8%87%AA%E7%A8%B1%E7%B9%BC%E6%89%BF%E4%BA%BA%EF%BC%81%E5%94%90%E6%96%B0%E6%B0%91%E6%89%AF%E3%80%8C%E9%A6%AC%E8%8B%B1%E4%B9%9D%E6%AF%92%E6%AE%BA%E8%94%A3%E7%B6%93%E5%9C%8B%E3%80%8D%E5%93%BD%E5%92%BD%EF%BC%9A%E6%AD%BB%E5%BE%97%E5%A5%BD%E5%86%A4%EF%BD%9C%E4%B8%89%E7%AB%8B%E6%96%B0%E8%81%9E%E7%B6%B2%20SETN_com-40c0087e65e7362b-SwxfbWjBM7FuSzbO14I2PGXgHOXxIq.jpg`,
-      title:
-        "30分鐘完整版／自稱繼承人！唐新民扯「馬英九毒殺蔣經國」哽咽：死得好冤｜三立新聞網 SETN.com",
-    },
     shortCut: {
       label: "2分25秒版本",
       sources: [
@@ -167,10 +162,6 @@ export const defaultContent: SiteContent = {
         "https://pub-c89792336046495e89758a0a802e15c8.r2.dev/di-8jie-tai-bei-shi-chang-xuan-ju-hui-gu.mp4",
       ],
       captions: "/saint202507050418.vtt",
-    },
-    fullVersion: {
-      label: "完整版本",
-      youtubeEmbed: "https://www.youtube.com/embed/eLF6tvVGFiA?si=bfanuCO8UwgP9RIL",
     },
     facts: [
       { label: "農曆", value: "七月初五上午04時18分" },
