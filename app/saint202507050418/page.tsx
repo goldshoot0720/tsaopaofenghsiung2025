@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 
-import Image from "next/image";
-
 import { PageHeader, SectionTitle } from "@/components/page-header";
 import { VideoPlayer } from "@/components/video-player";
 import { getContent } from "@/lib/content/store";
@@ -24,18 +22,7 @@ export default async function ReviewPage() {
           <VideoPlayer captions={review.shortCut.captions} sources={review.shortCut.sources} />
         </section>
 
-        <aside className="space-y-6 lg:sticky lg:top-24 lg:self-start">
-          <figure className="surface overflow-hidden">
-            <Image
-              alt={review.cover.title}
-              className="aspect-square w-full object-cover"
-              height={640}
-              src={review.cover.src}
-              width={640}
-            />
-            <figcaption className="p-4 text-sm leading-relaxed text-soft">{review.cover.title}</figcaption>
-          </figure>
-
+        <aside className="lg:sticky lg:top-24 lg:self-start">
           <dl className="surface divide-y divide-[var(--line)]">
             {review.facts.map((fact) => (
               <div key={fact.label} className="flex items-baseline justify-between gap-4 px-5 py-3.5">
