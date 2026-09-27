@@ -19,27 +19,10 @@ export default async function ReviewPage() {
       <PageHeader eyebrow="Archive" index="03" title={review.title} />
 
       <div className="grid gap-12 lg:grid-cols-[1fr_20rem]">
-        <div className="space-y-14">
-          <section>
-            <SectionTitle label="Short cut" title={review.shortCut.label} />
-            <VideoPlayer captions={review.shortCut.captions} sources={review.shortCut.sources} />
-          </section>
-
-          <section>
-            <SectionTitle label="YouTube" title={review.fullVersion.label} />
-            <div className="aspect-video overflow-hidden rounded-2xl bg-black">
-              <iframe
-                allowFullScreen
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                className="h-full w-full"
-                loading="lazy"
-                referrerPolicy="strict-origin-when-cross-origin"
-                src={review.fullVersion.youtubeEmbed}
-                title={review.fullVersion.label}
-              />
-            </div>
-          </section>
-        </div>
+        <section>
+          <SectionTitle label="Short cut" title={review.shortCut.label} />
+          <VideoPlayer captions={review.shortCut.captions} sources={review.shortCut.sources} />
+        </section>
 
         <aside className="space-y-6 lg:sticky lg:top-24 lg:self-start">
           <figure className="surface overflow-hidden">

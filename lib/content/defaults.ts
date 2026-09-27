@@ -168,10 +168,6 @@ export const defaultContent: SiteContent = {
       ],
       captions: "/saint202507050418.vtt",
     },
-    fullVersion: {
-      label: "完整版本",
-      youtubeEmbed: "https://www.youtube.com/embed/eLF6tvVGFiA?si=bfanuCO8UwgP9RIL",
-    },
     facts: [
       { label: "農曆", value: "七月初五上午04時18分" },
       { label: "國曆", value: "2025年08月27日" },

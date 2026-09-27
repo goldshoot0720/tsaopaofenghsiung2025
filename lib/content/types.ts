@@ -61,10 +61,6 @@ export interface SiteContent {
       sources: string[];
       captions: string;
     };
-    fullVersion: {
-      label: string;
-      youtubeEmbed: string;
-    };
     facts: Fact[];
   };
   yearbook: {
