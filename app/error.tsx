@@ -2,29 +2,19 @@
 
 import { useEffect } from "react";
 
-export default function Error({
-  error,
-  reset,
-}: {
-  error: Error;
-  reset: () => void;
-}) {
+export default function Error({ error, reset }: { error: Error; reset: () => void }) {
   useEffect(() => {
-    // Log the error to an error reporting service
     /* eslint-disable no-console */
     console.error(error);
   }, [error]);
 
   return (
-    <div>
-      <h2>Something went wrong!</h2>
-      <button
-        onClick={
-          // Attempt to recover by trying to re-render the segment
-          () => reset()
-        }
-      >
-        Try again
+    <div className="mx-auto max-w-md py-20 text-center">
+      <p className="label text-accent">Error</p>
+      <h1 className="font-display mt-3 text-3xl font-black">頁面發生錯誤</h1>
+      <p className="mt-3 text-soft">請稍後再試一次。</p>
+      <button className="btn btn-primary mt-8" type="button" onClick={() => reset()}>
+        重新載入
       </button>
     </div>
   );

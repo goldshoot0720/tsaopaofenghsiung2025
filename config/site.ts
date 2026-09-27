@@ -10,17 +10,8 @@ import {
 
 export const siteConfig = {
   name: "草包鋒兄",
-  description: "草包鋒兄",
+  description: "草包鋒兄 二零二五年至二零三八年 全紀錄：從高考三級資訊處理榜首到第12屆臺北市長（候選人）。",
   navItems: [
-    { label: "首頁", href: "/", icon: faHouse },
-    { label: "最新文章", href: "/article", icon: faNewspaper },
-    { label: "經歷", href: "/experience", icon: faChartLine },
-    { label: "團隊成員", href: "/member", icon: faUsers },
-    { label: "第8屆回顧", href: "/saint202507050418", icon: faHistory },
-    { label: "畢業紀念冊", href: "/yearbookOrannual", icon: faBook },
-    { label: "關於", href: "/about", icon: faInfo },
-  ],
-  navMenuItems: [
     { label: "首頁", href: "/", icon: faHouse },
     { label: "最新文章", href: "/article", icon: faNewspaper },
     { label: "經歷", href: "/experience", icon: faChartLine },
